@@ -1,1 +1,18 @@
 // Mixins Here
+
+.custom-btn(@c:white, @bg:red;){
+    height:45px;
+    width:200px;
+    border-radius:10px;
+    color:@c;
+    background-color: bg;
+    font-size:1.8rem;
+    .center();
+
+}
+
+.center(@a: center, @j:center){
+    display:flex;
+    align-items: @a;
+    justify-content: @j;
+}
