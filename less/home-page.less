@@ -20,7 +20,7 @@
       padding:0 15px;
     }
   
-  }
+  }//end of intro
 
   .space-images {
     display: flex;
@@ -33,7 +33,7 @@
       border-radius: 20px;
       height: 100%;
     }
-    @media @mobile{
+    @media @phone{
       
       .blast{
         width:100%
@@ -47,7 +47,7 @@
         display: none;
       }//end of media for three pics
     }
-  }
+  }//end of space images section
 
   .visit-planets {
     padding: 15px;
@@ -80,20 +80,21 @@
       }
 
       .btn {
-        .custom-btn(white, blue);
+        .custom-btn(white, @ebony-clay);
 
 
-        @media @mobile{
+        @media @phone{
           width:100%;
           height:60px;
   
-        }
+        }//media for button
       }
       @media @mobile{
-        .center();
+        display:flex;
+        justify-content: center;
         flex-direction: column;
         width:100%;
-      }
+      }//media for .walk-text section
     }
 
     .walk-img {
@@ -108,8 +109,9 @@
 
       @media @mobile{ 
         width:100%;
+        margin:0px;
       }
-    }
+    } //end of .walk-img section
 
     @media @mobile{
       flex-flow:column-reverse wrap;
@@ -118,12 +120,7 @@
       align-items: center;
     }
 
-    @media @mobile{
-      align-items: center;
-      justify-content: center;
-    }
-
-  }
+  }//end of .walk section
 
   @media @mobile{
     .center();
@@ -133,5 +130,5 @@
       width:100%;
     }
 
-  }
+  }//media for .home div
 }// home
