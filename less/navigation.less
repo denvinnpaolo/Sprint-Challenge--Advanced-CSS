@@ -1,21 +1,29 @@
 // Navigation code here
 
 .nav-header{
-
-    height:200px;
+    width:900px;
+    height:100px;
+    margin:0px auto;
 	
-	background-color:lightgray;
-	.center();
-	flex-direction:column;
+	background-color:@nav-bg;
+	.center(center, flex-end);
+    flex-direction:column;
+    
+    h1{
+        font-size:4rem;
+    }
 
 	nav{
-		
+
 		display:flex;
 		flex-wrap:nowrap;
 
 		a{
 			text-decoration:none;
-			margin:20px;
+            margin:10px 20px;
+            color:black;
+            font-size:1.7rem;
+    
 		}
 	}
 }
