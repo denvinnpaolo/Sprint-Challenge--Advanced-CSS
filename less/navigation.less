@@ -1,1 +1,45 @@
 // Navigation code here
+
+.nav-header{
+    width:900px;
+    height:100px;
+    margin:0px auto;
+	
+	background-color:@nav-bg;
+	.center(center, flex-end);
+    flex-direction:column;
+    
+
+    @media @phone{
+        width: 100%;
+        max-width: 500px;
+        height:100%;
+    }//media for nav-header
+
+
+    h1{
+        font-size:4rem;
+    }
+
+	nav{
+
+		display:flex;
+        flex-wrap:nowrap;
+        
+        @media @phone{
+            margin-top:10px;
+        }//media for nav tag
+
+		a{
+			text-decoration:none;
+            margin:10px 20px;
+            color:black;
+            font-size:1.7rem;
+
+            @media@phone{
+                margin:10px;
+                font-size: 1.5rem;
+            }//media for 'a' tag
+		}
+	}
+}
